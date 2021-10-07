@@ -3,7 +3,7 @@ function revealMessage()
   document.getElementById("hiddenMessage").style.display = 'block';
 }
 
-fetch(https://random.dog/woof.json)
+fetch('https://random.dog/woof.json')
       .then( (data) => data.json())
       .then( (animal) => generateHTML(animal) )
 
