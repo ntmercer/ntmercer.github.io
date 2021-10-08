@@ -3,9 +3,8 @@ h1 {
   color: red; }
 
 .grid {
-  margin: auto;
-  width: 60%;
-  display: grid;
-  grid-gap: 25px;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  height: 600px;
+  width: 750px;
 }
