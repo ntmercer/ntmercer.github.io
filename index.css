@@ -4,8 +4,8 @@ h1 {
 
 .grid {
   margin: auto;
-  width: 95%;
+  width: 60%;
   display: grid;
   grid-gap: 25px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
