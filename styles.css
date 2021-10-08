@@ -3,3 +3,7 @@
   grid-gap: 15px;
   grid-template-columns: repeat(auto-fit, 200pm);
 }
+
+p {
+            color: rgb(191, 0, 255);
+}
