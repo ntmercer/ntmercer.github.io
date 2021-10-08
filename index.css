@@ -1,4 +1,6 @@
-h1 {color: red; }
+h1 {
+  margin: auto;
+  color: red; }
 
 .grid {
   margin: auto;
