@@ -95,7 +95,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
   ]
   
+  cardArray.sort(() => 0.5 - Math.random())
+  
   const grid = document.querySelector('.grid')
+  const resultDisplay = document.querySelector('#result')
+  var cardsChosen = []
+  var cardsChosenID = []
+  var cardsWon = []
   
   function createBoard() {
         for (let i = 0; i < cardArray.length; i++) {
@@ -105,6 +111,40 @@ document.addEventListener('DOMContentLoaded', () => {
               //card.addEventListener('click', flipcard)
               grid.appendChild(card)
         }      
+  }
+      
+  //check for a match
+  function checkForMatch() {
+      var cards = document.querySelectorAll('img')
+      const optionOneID = cardsChosenID[0]
+      const optionTwoID = cardsChosenID[1]
+      if (cardsChosen[0] === cardsChosen[1]) {
+            alert('You found a match')
+            cards[optionOneID].setAttribute('src', 'https://www.canaryfoundation.org/wp-content/uploads/Gambhir-Symposium-NEW-Art-V2-Square-Aug-2021-150x150.png')
+            cards[optionTwoID].setAttribute('src', 'https://www.canaryfoundation.org/wp-content/uploads/Gambhir-Symposium-NEW-Art-V2-Square-Aug-2021-150x150.png')
+            cardsWon.push(cardsChosen)
+      } else {
+            cards[optionOneID].setAttribute('src', 'https://via.placeholder.com/150')
+            cards[optionTwoID].setAttribute('src', 'https://via.placeholder.com/150')
+            alert('Sorry, try again')
+      }
+        cardsChosen = []
+        cardsChosenID = []
+        resultDisplay.textContent = cardsWon.length
+        if(cardsWon.length === cardArray.length/2) {
+            resultDisplay.textContent = 'Congratulations! You won!'
+        }
+  }
+      
+  //flip card
+  function flipCard() {
+        var cardID = this.getAttribute('data-id')
+        cardsChosen.push(cardArray[cardID].name)
+        cardsChosenID.push(cardID)
+        this.setAttribute('src', cardArray[cardID].img)
+        if(cardsChosen.length === 2) {
+              setTimeout(checkForMatch, 500)
+        }
   }
       
   createBoard()
