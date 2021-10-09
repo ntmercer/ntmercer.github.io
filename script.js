@@ -142,6 +142,8 @@ document.addEventListener('DOMContentLoaded', () => {
         cardsChosen.push(cardArray[cardID].name)
         cardsChosenID.push(cardID)
         this.setAttribute('src', cardArray[cardID].img)
+        this.setAttribute('height', 150)
+        this.setAttribute('width', 150)
         if(cardsChosen.length === 2) {
               setTimeout(checkForMatch, 500)
         }
