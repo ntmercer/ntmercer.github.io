@@ -16,83 +16,83 @@ document.addEventListener('DOMContentLoaded', () => {
         {
               name: 'dog',
               img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        }
+        },
         {
               name: 'dog',
               img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        }
+        },
         {
               name: 'dog',
               img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        }
+        },
         {
               name: 'dog',
               img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        }
+        },
         {
               name: 'dog',
               img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        }
+        },
         {
               name: 'dog',
               img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        }
+        },
         {
               name: 'dog',
               img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        }
+        },
         {
               name: 'dog',
               img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        }
+        },
         {
               name: 'dog',
               img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        }
+        },
         {
               name: 'dog',
               img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        }
+        },
         {
               name: 'dog',
               img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        }
+        },
         {
               name: 'dog',
               img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        }
+        },
         {
               name: 'dog',
               img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        }
+        },
         {
               name: 'dog',
               img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        }
+        },
         {
               name: 'dog',
               img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        }
+        },
         {
               name: 'dog',
               img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        }
+        },
         {
               name: 'dog',
               img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        }
+        },
         {
               name: 'dog',
               img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        }
+        },
         {
               name: 'dog',
               img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        }
+        },
         {
               name: 'dog',
               img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        }
+        },
   ]
         
       
