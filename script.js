@@ -13,7 +13,7 @@ const generateHTML = (data) => {
 
 document.addEventListener('DOMContentLoaded', () => {
   const cardArray = []
-  for (let x = 0; x < 10; x++) {
+  for (let x. = 0; x < 10; x++) {
         
       fetch('https://random.dog/woof.json')
             .then( (data) => data.json())
