@@ -12,7 +12,91 @@ const generateHTML = (data) => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const cardArray = []
+  const cardArray = [
+        {
+              name: 'dog',
+              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
+        }
+        {
+              name: 'dog',
+              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
+        }
+        {
+              name: 'dog',
+              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
+        }
+        {
+              name: 'dog',
+              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
+        }
+        {
+              name: 'dog',
+              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
+        }
+        {
+              name: 'dog',
+              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
+        }
+        {
+              name: 'dog',
+              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
+        }
+        {
+              name: 'dog',
+              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
+        }
+        {
+              name: 'dog',
+              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
+        }
+        {
+              name: 'dog',
+              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
+        }
+        {
+              name: 'dog',
+              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
+        }
+        {
+              name: 'dog',
+              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
+        }
+        {
+              name: 'dog',
+              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
+        }
+        {
+              name: 'dog',
+              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
+        }
+        {
+              name: 'dog',
+              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
+        }
+        {
+              name: 'dog',
+              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
+        }
+        {
+              name: 'dog',
+              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
+        }
+        {
+              name: 'dog',
+              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
+        }
+        {
+              name: 'dog',
+              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
+        }
+        {
+              name: 'dog',
+              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
+        }
+  ]
+        
+      
+  /*const cardArray = []
   for (let x = 0; x < 10; x++) {
         
       fetch('https://random.dog/woof.json')
@@ -26,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
           cardArray.push(newCard)
           cardArray.push(newCard)
       }     
-  }
+  }*/
   
   cardArray.sort(() => 0.5 - Math.random())
   console.log(cardArray)
