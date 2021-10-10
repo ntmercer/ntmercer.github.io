@@ -12,88 +12,21 @@ const generateHTML = (data) => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const cardArray = [
-        {
-              name: 'dog',
-              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        },
-        {
-              name: 'dog',
-              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        },
-        {
-              name: 'dog',
-              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        },
-        {
-              name: 'dog',
-              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        },
-        {
-              name: 'dog',
-              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        },
-        {
-              name: 'dog',
-              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        },
-        {
-              name: 'dog',
-              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        },
-        {
-              name: 'dog',
-              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        },
-        {
-              name: 'dog',
-              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        },
-        {
-              name: 'dog',
-              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        },
-        {
-              name: 'dog',
-              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        },
-        {
-              name: 'dog',
-              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        },
-        {
-              name: 'dog',
-              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        },
-        {
-              name: 'dog',
-              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        },
-        {
-              name: 'dog',
-              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        },
-        {
-              name: 'dog',
-              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        },
-        {
-              name: 'dog',
-              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        },
-        {
-              name: 'dog',
-              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        },
-        {
-              name: 'dog',
-              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        },
-        {
-              name: 'dog',
-              img: 'https://random.dog/2a99e070-ac7c-444f-9906-223338c4afee.jpg'
-        }
-  ]
+  const cardArray = []
+  for (let i = 0; i < 10; i++) {
+        
+      fetch('https://random.dog/woof.json')
+            .then( (data) => data.json())
+            .then( (animal) => addNewCard(animal) )
+
+      const addNewCard = (data) =>
+      {
+          var newCard = { name: 'dog', img: data.url }
+          console.log(newCard)
+          cardArray.push(newCard)
+          cardArray.push(newCard)
+      }     
+  }
   
   cardArray.sort(() => 0.5 - Math.random())
   
