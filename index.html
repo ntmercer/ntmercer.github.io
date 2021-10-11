@@ -1,3 +1,5 @@
+<!--Nathaniel Mercer - COMP 421 Final Project - Spring 2021 semester - Turned in 10/11/2021-->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,20 +7,34 @@
   <script src="script.js"></script>
 </head>
 <body>
-  <form id="creatureForm">
-    <label>Choose a creature:</label>
-    <select id="creatures">
-      <option value="dog">Dogs</option>
-      <option value="cat">Cats</option>
-      <option value="koala">Koalas</option>
-    </select>
-    <br><br>
-    <input type="submit" value="Start/Reset">
-  </form>
-  <h3>Score: <span id="result"></span></h3>
-  <h3>Number of moves: <span id="moves"></span></h3>
-  <div class="grid">
+  <!--Header, intro/instructions-->
+  <div class="header">
+    <h1>Pet Matching!</h1>
+    <p>Choose an animal from the drop-down menu and press "Start" to begin! Click a tile to flip it over, and match all of the tiles to win.
+      Plus, when you have completed all the matches, you can see a fact about the animal you chose! You can press "Reset" to try again, or try another animal.</p>
   </div>
-  <h3>Fact: <span id="fact"></span></h3>
+  <div class="row">
+    <!--Left column, grid-->
+    <div class="column left">
+      <div class="grid">
+      </div>
+    </div>
+    <!--Right column, text/menu-->
+    <div class="column right">
+      <form id="creatureForm">
+        <label>Choose a creature:</label>
+        <select id="creatures">
+          <option value="dog">Dogs</option>
+          <option value="cat">Cats</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Start/Reset">
+      </form>
+      <h3>Score: <span id="result"></span></h3>
+      <h3>Number of moves: <span id="moves"></span></h3>
+      <h3>Fact: <span id="fact"></span></h3>
+    </div>
+  </div>
+  <h6>COMP 421 Final Project - Nathaniel Mercer</h6>
 </body>
 </html>

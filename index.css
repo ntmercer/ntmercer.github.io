@@ -1,10 +1,47 @@
+/* Nathaniel Mercer - COMP 421 Final Project - Spring 2021 semester - Turned in 10/11/2021*/
+
+body {
+  background-color: #b8c9db;
+}
+
 h1 {
   text-align: center;
-  color: red; }
+  color: darkblue;
+}
 
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Grid with animal images */
 .grid {
   display: flex;
   flex-wrap: wrap;
   height: 600px;
   width: 750px;
+}
+
+/* Columns */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left column (grid)*/
+.column.left {
+  width: 50%;
+}
+
+/* Right column (text/menu) */
+.column.right {
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
